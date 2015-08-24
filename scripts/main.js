@@ -38,6 +38,24 @@ $(document).ready(function() {
 			url: 'http://api2.freedom.tm',
 			test_url: 'http://api2.freedom.tm',
 			expected_status: 404
+		},
+		{
+			name: 'Gamers.tm',
+			url: 'http://api.gamers.tm/',
+			test_url: 'http://api.gamers.tm/',
+			expected_status: 404
+		},
+		{
+			name: 'Gamers Beta Frontend',
+			url: 'http://beta.gamers.tm/',
+			test_url: 'http://beta.gamers.tm/',
+			expected_status: [200, 304]
+		},
+		{
+			name: 'Gamers Beta Admin',
+			url: 'http://beta.gamers.tm:3000/',
+			test_url: 'http://beta.gamers.tm:3000/api/games',
+			expected_status: [200, 304]
 		}
 	];
 
@@ -47,7 +65,7 @@ $(document).ready(function() {
 				$('#list').append(' \
 			            <li class="collection-item dismissable">\
 			                <div>' + a.name + ' (<a href="' + a.url + '" target="_blank">' + a.url + '</a>)\
-			                    <span class="secondary-content status-text-' + (b.status === a.expected_status ? 'normal' : 'rekt') + '">' + (b.status === a.expected_status ? 'GOOD' : 'REKT') + '</span>\
+			                    <span class="secondary-content status-text-' + ((Array.isArray(a.expected_status) && a.expected_status.indexOf(b.status)) || b.status === a.expected_status ? 'normal' : 'rekt') + '">' + ((Array.isArray(a.expected_status) && a.expected_status.indexOf(b.status)) || b.status === a.expected_status ? 'GOOD' : 'REKT') + '</span>\
 			                </div>\
 			            </li>\
 				');
