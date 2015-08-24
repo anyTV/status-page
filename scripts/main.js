@@ -79,6 +79,12 @@ $(document).ready(function() {
             url: 'http://52.12.82.102:3000',
             test_url: 'http://52.12.82.102:3000',
             expected_status: [404]
+        },
+        {
+            name: 'Earnings Module',
+            url: 'https://earnings.freedom.tm',
+            test_url: 'https://earnings.freedom.tm',
+            expected_status: [200, 400, 403, 404]
         }
     ];
 
