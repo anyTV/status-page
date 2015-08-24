@@ -1,0 +1,75 @@
+
+.table-card table > thead > tr, .last-row {
+	border-bottom: 1px solid #757575!important;
+}
+table > tbody > tr > a {
+    cursor: pointer;
+}
+
+.collection.table-card .collection-item:hover, .collapsible.services > li.services-item > .collapsible-header:hover {
+    background-color: #f2f2f2;
+}
+.collection.table-card .collection-item {
+	padding: 15px 50px;
+}
+
+.header-section {
+    height: 250px;
+}
+
+.text-header {
+	padding-top: 40px;
+}
+.page-title {
+	font-weight: 300;
+    font-size: 48px;
+}
+
+.sub-title {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.table-card {
+    transform: translateY(-75px);
+}
+
+.status-text-normal {
+	color: #388e3c;
+}
+.status-text-rekt {
+	color: #ef5350;
+}
+.time-text {
+	color: 	#bdbdbd;
+	font-size: 14px;
+}
+
+.collapsible.services {
+	border:none;
+	margin: 0;
+}
+.collapsible.services .collapsible-header {
+	padding-left: 40px;
+	padding-right: 50px;
+}
+
+.collection.inner-services {
+	margin:0;
+	border: none;
+}
+
+.collection.inner-services .collection-item {
+	background-color: #757575;
+}
+.collection.inner-services .collection-item:hover {
+	background-color: #616161;
+}
+
+.refresh-text {
+	font-size: 16px;
+	padding-top: 105px;
+}
+.refresh-time {
+	font-size: 24px;
+}
