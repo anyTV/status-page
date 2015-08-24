@@ -56,6 +56,12 @@ $(document).ready(function() {
 			url: 'http://beta.gamers.tm:3000/',
 			test_url: 'http://beta.gamers.tm:3000/api/games',
 			expected_status: [200, 304]
+		},
+		{
+			name: 'Gamers Development DB',
+			url: 'http://203.177.42.92:8082/',
+			test_url: 'http://203.177.42.92:8082/',
+			expected_status: 404
 		}
 	];
 
