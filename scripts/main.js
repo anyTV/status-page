@@ -73,6 +73,12 @@ $(document).ready(function() {
             url: 'https://www.community.tm/',
             test_url: 'https://www.community.tm/',
             expected_status: [200]
+        },
+        {
+            name: 'Freedom! Reuter Server',
+            url: 'http://52.12.82.102:3000',
+            test_url: 'http://52.12.82.102:3000',
+            expected_status: [404]
         }
     ];
 
