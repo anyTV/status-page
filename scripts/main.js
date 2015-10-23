@@ -57,12 +57,6 @@ $(document).ready(function() {
             expected_status: [200, 304]
         },
         {
-            name: 'Gamers Development DB',
-            url: 'http://203.177.42.92:8082/',
-            test_url: 'http://203.177.42.92:8082/',
-            expected_status: 404
-        },
-        {
             name: 'Freedom! Dashboard',
             url: 'https://www.freedom.tm/',
             test_url: 'https://www.freedom.tm/',
