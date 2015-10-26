@@ -33,12 +33,6 @@ $(document).ready(function() {
             expected_status: 404
         },
         {
-            name: 'Heartbeat channel verification server',
-            url: 'http://api2.freedom.tm',
-            test_url: 'http://api2.freedom.tm',
-            expected_status: 404
-        },
-        {
             name: 'Gamers.tm',
             url: 'http://api.gamers.tm/',
             test_url: 'http://api.gamers.tm/',
