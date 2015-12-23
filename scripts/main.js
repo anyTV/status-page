@@ -78,13 +78,13 @@ $(document).ready(function() {
             name: 'Spam.tm API',
             url: 'http://spam.api.tm',
             test_url: 'http://spam.api.tm',
-            expected_status: [404]
+            expected_status: 404
         },
         {
             name: 'Proxy API',
             url: 'http://proxy.api.tm',
             test_url: 'http://proxy.api.tm',
-            expected_status: [404]
+            expected_status: 404
         },
         {
             name: 'Trixie tool',
