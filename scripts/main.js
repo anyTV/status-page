@@ -73,8 +73,49 @@ $(document).ready(function() {
             url: 'https://earnings.freedom.tm',
             test_url: 'https://earnings.freedom.tm',
             expected_status: [200, 400, 403, 404]
+        },
+        {
+            name: 'Spam.tm API',
+            url: 'http://spam.api.tm',
+            test_url: 'http://spam.api.tm',
+            expected_status: [404]
+        },
+        {
+            name: 'Proxy API',
+            url: 'http://proxy.api.tm',
+            test_url: 'http://proxy.api.tm',
+            expected_status: [404]
+        },
+        {
+            name: 'Trixie tool',
+            url: 'http://api2.freedom.tm:3000',
+            test_url: 'http://api2.freedom.tm:3000',
+            expected_status: [200, 302, 304]
+        },
+        {
+            name: 'Spam.tm',
+            url: 'http://www.spam.tm',
+            test_url: 'http://www.spam.tm',
+            expected_status: [200, 304]
+        },
+        {
+            name: 'Universal Uploader',
+            url: 'http://www.upload.tm',
+            test_url: 'http://www.upload.tm',
+            expected_status: [200, 304]
+        },
+        {
+            name: '[Master] Unlinked channels',
+            url: 'http://raven.tm',
+            test_url: 'http://raven.tm',
+            expected_status: [200, 304]
+        },
+        {
+            name: '[Master] Updated counters',
+            url: 'http://raven.tm:8080',
+            test_url: 'http://raven.tm:8080',
+            expected_status: [200, 304]
         }
-
     ];
 
     services.forEach(function (a) {
