@@ -115,6 +115,12 @@ $(document).ready(function() {
             url: 'http://raven.tm:8080',
             test_url: 'http://raven.tm:8080',
             expected_status: [200, 304]
+        },
+        {
+            name: 'Frnky',
+            url: 'n/a',
+            test_url: 'http://54.86.46.74:3002/',
+            expected_status: 404
         }
     ];
 
