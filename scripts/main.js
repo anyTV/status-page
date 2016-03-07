@@ -24,7 +24,7 @@ $(document).ready(function() {
             name: 'Heartbeat/HeartbeatTM server',
             url: 'https://www.you1tube.com',
             test_url: 'https://www.you1tube.com',
-            expected_status: 404
+            expected_status: [200]
         },
         {
             name: 'Partnership status checker',
@@ -34,21 +34,9 @@ $(document).ready(function() {
         },
         {
             name: 'Gamers.tm',
-            url: 'http://api.gamers.tm/',
-            test_url: 'http://api.gamers.tm/',
-            expected_status: 404
-        },
-        {
-            name: 'Gamers Beta Frontend',
-            url: 'http://beta.gamers.tm/',
-            test_url: 'http://beta.gamers.tm/',
-            expected_status: [200, 304]
-        },
-        {
-            name: 'Gamers Beta Admin',
-            url: 'http://beta.gamers.tm:3000/',
-            test_url: 'http://beta.gamers.tm:3000/api/games',
-            expected_status: [200, 304]
+            url: 'http://gamers.tm/',
+            test_url: 'http://gamers.tm/',
+            expected_status: [200]
         },
         {
             name: 'Freedom! Dashboard',
@@ -75,24 +63,6 @@ $(document).ready(function() {
             expected_status: [200, 400, 403, 404]
         },
         {
-            name: 'Spam.tm API',
-            url: 'http://spam.api.tm',
-            test_url: 'http://spam.api.tm',
-            expected_status: 404
-        },
-        {
-            name: 'Proxy API',
-            url: 'http://proxy.api.tm',
-            test_url: 'http://proxy.api.tm',
-            expected_status: 404
-        },
-        {
-            name: 'Trixie tool',
-            url: 'http://api2.freedom.tm:3000',
-            test_url: 'http://api2.freedom.tm:3000',
-            expected_status: [200, 302, 304]
-        },
-        {
             name: 'Spam.tm',
             url: 'http://www.spam.tm',
             test_url: 'http://www.spam.tm',
@@ -102,18 +72,6 @@ $(document).ready(function() {
             name: 'Universal Uploader',
             url: 'http://www.upload.tm',
             test_url: 'http://www.upload.tm',
-            expected_status: [200, 304]
-        },
-        {
-            name: '[Master] Unlinked channels',
-            url: 'http://raven.tm',
-            test_url: 'http://raven.tm',
-            expected_status: [200, 304]
-        },
-        {
-            name: '[Master] Updated counters',
-            url: 'http://raven.tm:8080',
-            test_url: 'http://raven.tm:8080',
             expected_status: [200, 304]
         },
         {
