@@ -73,12 +73,6 @@ $(document).ready(function() {
             url: 'http://www.upload.tm',
             test_url: 'http://www.upload.tm',
             expected_status: [200, 304]
-        },
-        {
-            name: 'Frnky',
-            url: 'n/a',
-            test_url: 'http://54.86.46.74:3002/',
-            expected_status: 404
         }
     ];
 
